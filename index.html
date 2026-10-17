@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>الرئيسية | معرض أعمالي</title>
+  <meta name="description" content="معرض أعمالي في تصميم مواقع الويب">
+  <link rel="stylesheet" href="css/style.css">
+  <script>document.documentElement.classList.add('js')</script>
+  <script src="js/config.js" defer></script>
+  <script src="js/projects.js" defer></script>
+  <script src="js/lightbox.js" defer></script>
+  <script src="js/slider.js" defer></script>
+  <script src="js/flag-logo.js" defer></script>
+  <script src="js/main.js" defer></script>
+</head>
+<body>
+
+  <!-- الشريط العلوي يُبنى تلقائيًا من js/config.js -->
+  <div id="site-header"></div>
+
+  <main>
+    <!-- ===== الواجهة: صور متبدلة (يمين) + الشعار الكبير (يسار) ===== -->
+    <section class="hero section-light has-deco">
+      <img class="deco deco-letters tl" data-parallax="0.06" src="assets/images/deco/letters.png" alt="" aria-hidden="true">
+      <span class="deco deco-circle tr" data-parallax="-0.08" aria-hidden="true"></span>
+      <span class="deco deco-circle bl" data-parallax="0.08" style="--d:380px;--dur:19s" aria-hidden="true"></span>
+      <img class="deco deco-letters br" data-parallax="-0.05" src="assets/images/deco/letters.png" alt="" aria-hidden="true">
+      <div class="container hero-grid">
+
+        <div class="slider-wrap reveal">
+          <!-- ثلاث صور تتبدل كل 3 ثوانٍ. غيّر مسار src فقط. يفضّل صور مربعة. -->
+          <div class="slider" data-interval="3000" data-controls="dots" data-zoom title="اضغط لعرض الصورة كاملة">
+            <div class="slide"><img src="assets/images/hero/hero-1.png" alt="صورة 1"></div>
+            <div class="slide"><img src="assets/images/hero/hero-2.png" alt="صورة 2"></div>
+            <div class="slide"><img src="assets/images/hero/hero-3.png" alt="صورة 3"></div>
+          </div>
+        </div>
+
+        <!-- الشعار: يُقرأ من SITE.logo في js/config.js -->
+        <div class="logo-stage reveal" style="--d:200ms" data-logo-flag>
+          <canvas role="img" aria-label="شعاري"></canvas>
+          <span class="logo-fallback">ضع شعارك هنا</span>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ===== الزران ===== -->
+    <section class="cta-band">
+      <div class="container reveal">
+        <p>مصمم مواقع ويب — أحوّل الأفكار إلى تجارب رقمية أنيقة.</p>
+        <div class="btn-row">
+          <a class="btn btn-burgundy" data-arrow href="works.html">أعمالي</a>
+          <a class="btn btn-line" data-arrow href="about.html">من أنا</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== ثلاثة من الأعمال (من js/projects.js) ===== -->
+    <section class="section section-burgundy has-deco" id="featured">
+      <img class="deco deco-letters bl" data-parallax="0.05" src="assets/images/deco/letters.png" alt="" aria-hidden="true">
+      <div class="container">
+        <div class="section-head reveal">
+          <span class="eyebrow">معرض مختار</span>
+          <h2 class="section-title">من أعمالي</h2>
+        </div>
+        <div class="cards" data-render="featured"></div>
+        <div class="section-foot reveal">
+          <a class="btn btn-solid" data-arrow href="works.html">عرض جميع الأعمال</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="site-footer"></div>
+</body>
+</html>

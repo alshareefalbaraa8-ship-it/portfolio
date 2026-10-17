@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="500" viewBox="0 0 1000 500">
+<rect x="40" y="40" width="920" height="420" rx="28" fill="#61111C" stroke="#E8DFCE" stroke-width="8"/>
+<circle cx="500" cy="190" r="70" fill="none" stroke="#E8DFCE" stroke-width="8"/>
+<path d="M470 190 L495 215 L535 165" fill="none" stroke="#E8DFCE" stroke-width="10" stroke-linecap="round" stroke-linejoin="round"/>
+<text x="500" y="350" text-anchor="middle" direction="rtl" font-family="Simplified Arabic, Tahoma, Arial, sans-serif" font-size="110" font-weight="700" fill="#E8DFCE">شعارك هنا</text>
+</svg>
