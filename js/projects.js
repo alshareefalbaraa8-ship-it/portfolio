@@ -50,7 +50,7 @@ const PROJECTS = [
       { label: "الأدوات", value: "Figma · HTML · CSS" },
       { label: "العميل", value: " اصحاب مشروع خاص" }
     ],
-    link: ""
+    link: "https://cool-zabaione-6e7549.netlify.app/"
   },
   {
     id: "project-3",
@@ -72,6 +72,6 @@ const PROJECTS = [
       { label: "الأدوات", value: " html · css · JavaScript" },
       { label: "العميل", value: " اصحاب حملة انسانية " }
     ],
-    link: ""
+    link: "https://alshareefalbaraa8-ship-it.github.io/-_-/"
   }
 ];
